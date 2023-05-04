@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        const increment = (number, value = 1) => {
-            console.log(number + value);
-            return number + value;
+        function convertorCtoF(celsius) {
+            let fahrenheit = celsius * (9 / 5) + 32;
+            console.log(fahrenheit);
+            return fahrenheit;
         }
-        increment(5, 2);
-        increment(5);
+        convertorCtoF(0);
+        convertorCtoF(-30);
+        convertorCtoF(-10);
+        convertorCtoF(30);
     </script>
 </head>
 
