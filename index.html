@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function isLess(a, b) {
-            return a < b ? true : false;
+        const increment = (number, value = 1) => {
+            console.log(number + value);
+            return number + value;
         }
-        isLess(15, 10);
+        increment(5, 2);
+        increment(5);
     </script>
 </head>
 
